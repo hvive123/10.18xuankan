@@ -399,6 +399,7 @@ export class ChatGPTApi implements LLMApi {
       throw new Error(Locale.Error.Unauthorized);
     }
 
+
     if (!used.ok || !subs.ok) {
       throw new Error("Failed to query usage from openai");
     }
